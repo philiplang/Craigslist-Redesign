@@ -2,7 +2,24 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href='http://fonts.googleapis.com/css?family=Mouse+Memoirs' rel='stylesheet' type='text/css'>
+	  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh7jOR1oC9dfye0Md5bzEbSLRMPB9zeyk&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+      }
+      </script>
+
 	<title>New Craigslist </title>
 </head>
 
@@ -55,7 +72,7 @@
 
 	<div class="clearfix"></div>
 
-	<div class="pic-container">
+	<div class="left-container">
 		<div class="big-picture">
 			<img src="http://placehold.it/575x350">
 		</div> <!-- big-picture -->
@@ -68,7 +85,24 @@
 			<a href=""><img src="http://placehold.it/100x75"></a>
 			<a href=""><img src="http://placehold.it/100x75"></a>
 		</div> <!-- thumbnails -->
-	</div> <!-- pic-container -->
+	
+	<h3>Description</h3>
+	<div class="property-description">	
+		<p>The size and age of the Cosmos are beyond ordinary human understanding. Lost somewhere between immensity and eternity is our tiny planetary home. In a cosmic perspective, most human concerns seem insignificant, even petty. And yet our species is young and curious and brave and shows much promise. In the last few millennia we have made the most astonishing and unexpected discoveries about the Cosmos and our place within it, explorations that are exhilarating to consider. They remind us that humans have evolved to wonder, that understanding is a joy, that knowledge is prerequisite to survival. I believe our future depends powerfully on how well we understand this Cosmos in which we float like a mote of dust in the morning sky.</p>
+	</div> <!-- property-description -->
+	<h3>Amenities</h3>
+	<div class="property-description">	
+		<p>Gramercy is a beautiful and quiet nabe centered around Gramercy Park, a well-kept gated square not open to the public. Gramercy's architecture consists of a mix of pre and post-war co-ops and brownstones. Gramercy is a quietly luxurious contrast to the hustle of nearby Flatiron and Midtown nabes. Its institutions--the Gramercy Park Hotel, Pete's Tavern, and a few private clubs--have been fixtures of the nabe since the turn of the century.</p>
+	</div> <!-- Amenities -->
+	<div id="map_canvas"></div>
+
+	</div> <!-- left-container -->
+	
+		
+
+
+	<div class="right-container">
+	
 	<div class="attribute-container">
 		<p class="post-date">Posted:&nbsp<span>12/18/12 - 3:05 PM</span></class>
 			<div class="clearfix"></div>
@@ -81,15 +115,28 @@
 				<textarea name="agent-message" class="agent-message" placeholder="I'm interested in this home!  Please give me a call at (xxx) xxx-xxxx"></textarea>
 				<input type="submit" name="contact" value="E-mail Me!" class="contact-button">
 			</div> <!-- center-elements -->
-
 	</div> <!-- attribute-container -->
+		<div class="nabewise-container">
+			<div id="nabewise_widget" class="cleanslate" style="display: none !important; border-color: #dadae6 !important; background-color: #FBFBFB !important; "width="302">
+      			<div class="nabewise_widget nabewise_tall_widget">
+					<div class="nabewise_widget_container">
+						<h1 class="nabewise_header"><span class="city">New York City</span><a href="http://nabewise.com/widgets/nabe/cb3ba8a34b81?neighborhood=Gramercy&city=New%20York%20City&v=2" target="_blank" class="nabe">Gramercy</a> Scorecard</h1>
+							<div id="nabewise_widget_inner">
+	          				</div>
+	        		</div>
+	      		</div>
+				<div class="nabewise_footer"><a href="http://nabewise.com" target="_blank">NabeWise</a></div>    
+			</div>
+	    	<link rel="stylesheet" type="text/css" href="http://nabewise.com/stylesheets/cleanslate.min.css" />
+	    	<script src="http://nabewise.com/javascripts/bundle_widgets.js"></script>    <script>
+			NabeWise.HOST = "http://nabewise.com"
+			NabeWise.EOPTS = { "color": "#333333", "link_color": "#4585A8" };
+			</script>
+    	<script src="http://nabewise.com/api/v1/cb3ba8a34b81/neighborhood_by_name?city=New%20York%20City&neighborhood=Gramercy&callback=NabeWise.TallWidget('nabewise_widget',{fha:true}).init"></script>
+			</div>
+	
+	</div> <!-- right-container -->
 	<div class="clearfix"></div>
-
-	<div class="property-description">
-		Description
-	</div> <!-- property-description -->	
-
-	<div class="image-container"></div>
 
 
 	
