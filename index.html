@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link href='http://fonts.googleapis.com/css?family=Mouse+Memoirs' rel='stylesheet' type='text/css'>
 	  <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh7jOR1oC9dfye0Md5bzEbSLRMPB9zeyk&sensor=false">
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO-x-bYUVoNXqdTsHEoJPuyynThSZSY5A&sensor=true">
     </script>
     <script type="text/javascript">
       function initialize() {
@@ -94,8 +94,15 @@
 	<div class="property-description">	
 		<p>Gramercy is a beautiful and quiet nabe centered around Gramercy Park, a well-kept gated square not open to the public. Gramercy's architecture consists of a mix of pre and post-war co-ops and brownstones. Gramercy is a quietly luxurious contrast to the hustle of nearby Flatiron and Midtown nabes. Its institutions--the Gramercy Park Hotel, Pete's Tavern, and a few private clubs--have been fixtures of the nabe since the turn of the century.</p>
 	</div> <!-- Amenities -->
-	<div id="map_canvas"></div>
-
+	<!-- <div id="map_canvas"></div> -->
+		<h3>Map</h3>
+		<div class="google_maps">
+			<img src="http://maps.googleapis.com/maps/api/staticmap?center=40.73794,-73.98685&zoom=15&size=583x300&sensor=false">
+		</div> <!-- google_maps -->
+		<h3>Streetview</h3>
+		<div class="google_maps">
+			<img src="http://maps.googleapis.com/maps/api/streetview?size=583x300&location=40.73794,-73.98685&heading=250&fov=270&pitch=-10&sensor=false">
+		</div> <!-- google_maps -->
 	</div> <!-- left-container -->
 	
 		
@@ -134,15 +141,17 @@
 			</script>
     	<script src="http://nabewise.com/api/v1/cb3ba8a34b81/neighborhood_by_name?city=New%20York%20City&neighborhood=Gramercy&callback=NabeWise.TallWidget('nabewise_widget',{fha:true}).init"></script>
 			</div>
-	
+
+
 	</div> <!-- right-container -->
 	<div class="clearfix"></div>
-
-
 	
 	</div> <!-- inner-container -->
 	</div> <!-- main-container -->
 
+	<div class="footer">
+		hello
+	</div> <!-- footer -->
 
 
 
