@@ -272,10 +272,6 @@ p.phone-number:hover {
 	margin: 145px 0px 40px 20px;
 }
 
-.google_maps{
-	border: 1px solid #dadae6;
-	border-radius: 5px;
-}
 
 .footer {
 	margin-top: 30px;
@@ -284,4 +280,9 @@ p.phone-number:hover {
 	width: 100%;
 	height: 30px;
 	background-color: #c00;
+}
+
+.google_maps{
+	border: 1px solid #dadae6;
+	border-radius: 5px;
 }
