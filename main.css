@@ -38,6 +38,7 @@ h1{
 
 body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #503e2b;
 	background: #F0F0F0;
 }
 
@@ -275,11 +276,39 @@ p.phone-number:hover {
 
 .footer {
 	margin-top: 30px;
-	position: absolute;
-	bottom: 0px;
+	display: block;
 	width: 100%;
-	height: 30px;
-	background-color: #c00;
+	height: 40px;
+	border: 1px solid #dadae6;
+	-webkit-box-shadow: 0px 2px 2px #dadae6;
+	background: #FBFBFB;
+}
+
+.footer ul {
+	float: right;
+	margin-right: 135px;
+	margin-top: 10px;
+}
+
+.footer-item {
+	display: inline;
+	font-size: 12px;
+	border-right: 1px solid #dadae6;;
+	padding: 0px 8px;
+}
+
+.footer-item a {
+	text-decoration: none;
+	color: #503e2b;
+}
+
+.footer-item a:hover {
+	text-decoration: underline;
+	text-shadow: 0px 1px 2px #888;
+}
+
+.footer-item:last-child{
+	border-right: none;
 }
 
 .google_maps{
